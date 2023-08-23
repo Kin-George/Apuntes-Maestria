@@ -178,92 +178,114 @@
         </nav>
 
         <main>
-            <h1>Microeconomia I</h1>
+            <h1>Macroeconomia I</h1>
             <hr>
-            <h1>Teoria de decisión</h1>
-            <p>El modelo de la teoria de las decisiones es un modelo basado en acercamientos a la optimizacion economica, que puede ser utilizado en diferentes ambitos de la vida cotidiana.</p>
-            <p>Un tomador de decisiones (TD) debe elegir su alternativa preferida de x de un conjunto X con consistencia</p>
-            <p>El problema quedaria modelado: $u:X\rightarrow\mathbb{R}$</p>
-            <h1>Preferencias y elección</h1>
-            <hr>
-            <p>Sea X el conjunto de posibles alternativas o decisiones. <br> Podemos tener $X \in \mathbb{R}^n$ si tenemos $n$ bienes diferentes.</p>
+            <p>La macroeconomia moderna es basada en microeconomia utilizando modelos que son microfundamentados gracias a la critica de Lucas.
+                <br> La macro antigua solo contemplaba modelos como IS-LM en el cual no tienen agentes racionales. Lucas observo que agentes racionales
+                llevan en consideracion cambios de la politica economica. 
+                <br> Despues de la critica de lucas toda la macro se cambio. Ahora, toda la macro tiene modelos microfundamentados:
+                <ul>
+                    <li>Modelo neoclasico de crecimiento</li>
+                    <li>Modelo neoclasico de crecimiento estocastico</li>
+                    <li>Modelos de generaciones traslapados</li>
+                    <li>Modelos de busqueda</li>
+                </ul>
+            </p>
+            <h1>Modelo IS-LM</h1>
             <ul>
-                <li>$x\in\mathbb{X}$ especifica la cantidad de cada bien. (commida, ropa, celulares, etc)</li>
-                <li>$x=\left (  x_{1},x_{2},...,x_{n}\right )$ en el caso de n bienes.</li>
+                <li>Consumo: $c=\overline{c}+c(y-T), c\in (0,1)$</li>
+                <li>Inversion: $I=\overline{I}+(-r)b, b>0</li>
+                <li>Ecuacion: $y=C+I+G$</li>
             </ul>
-            <p>Podemos definir las relaciones de preferencia sobre el conjunto $\mathbb{X}$ asi:  </p>
+            <p>Ponemos todo en terminos de productos:
+                <br> $$y=\frac{\overline{c}-cT+\overline{i}-br+G}{1-c}$$, no tiene restricciones de oferta (z). El multiplicador fiscal es fijo.
+            </p>
+            <p>Lucas (1972), Lucas (1975), Lucas (1976) 
+                <br> En macro moderna un modelo es microfundamentado si satisface el principio de "PETER":
+                <ul>
+                    <li>Preferencias</li>
+                    <li>Dotaciones</li>
+                    <li>Tecnologia</li>
+                    <li>Expectativas</li>
+                    <li>Racionalidad</li>
+                </ul>
+            </p>
+            <h1>Equilibrio competitivo</h1>
+            <p>Decimos que (p,x) es un equilibrio competitivo si y solo si:
+                <ul>
+                    <li>X es consistente con la maximizacion de utilidad de los agentes con base en los precios.</li>
+                    <li>(p,x) es consistente con el vaciamiento de los mercados.</li>
+                </ul>
+            </p>
+            <h1>Construccion del modelo macro</h1>
+            <ol>
+                <li>Describir la economia (PETER): <br> <ul>
+                    <li>Los agentes</li>
+                    <li>El ambiente</li>
+                    <li>Espacios de consumo</li>
+                    <li>Dotaciones</li>
+                    <li>Preferencias</li>
+                    <li>Tecnologia</li>
+                    <li>Expectativas/informacion</li>
+                    <li>Como los agentes interactuan: generalmente utilizamos mercados commpetitivos, tambien modelos como "bargaining".</li>
+                </ul></li>
+                <li>Definir los problemas de optimizacion y equilibrio: <br>
+                <ul>
+                    <li>Los problemas de eleccion de cada agente</li>
+                    <li>La nocion de equilibrio (nocion de consistencia de elecciones)</li>
+                </ul></li>
+                <li>Caracterizar el equilibrio: <br>
+                <ul>
+                    <li>Resolver el modelo: con base en la solucion de los problemas de eleccion individual y en la agregacion de estas soluciones, buscamos los precios y las asignaciones de equilibrio.</li>
+                </ul></li>
+            </ol>
+            <h1>Modelos de 2 periodos</h1>
+            <p>
             <ul>
-                <li>Preferencia debil: $x\succsim y\leftrightarrow x\, es\, al\, menos\, tan\, bueno\, como\, y$</li>
-                <li>Preferencia estricta: $x\succ y \Leftrightarrow x\succsim y \, \wedge y \succnsim x$ "x es al menos tan bueno como y, pero y no es tan bueno como x" </li>
-                <li>Indiferencia: $x\sim y\Leftrightarrow x\succsim y\,  \wedge y \succsim x$ "x es al menos tan bueno como y, e y es al menos tan bueno como x"</li>
+                <li>N familias identicas que viven dos periodos, T=1,2</li>
+                <li>Commodities (bienes): existe una funcion de utilidad y preferencias $U(c_{1},c{2})$ donde $c_{1}$ es consumo en periodo 1 y $c_{2}$ es consumo en periodo 2</li>
+                <li>Existe solo un bien.</li>
+                <li>Dotaciones: $e_{t}\geq 0$ con $t=1,2$.</li>
+                <li>Mercado: Los agentes compran y venden los bienes de los periodos $T=1,2$ en un mercado competitivo con $p_{1}$ y $p_{2}$ para cada periodo</li>
+                <li>Tenemos el problema de optimizacion: $Max\: (c_{1},c_{2}) \: U(c_{1},c_{2}) \: s.a \: p_{1}c_{1}+p_{2}c_{2}\leq p_{1}c_{1}+p_{2}c_{2}$</li>
             </ul>
-            <p>Esta relación de preferencias es racional si cumple con dos definiciones:</p>
+            Tenemos que: 
+            <br> Proposicion: un modelo de EG de arrow-debreu con 1 bien y T periodos es equivalente con un EG con T bienes.
+            <br> En arrow-debreu todas las transacciones son hechas simultaneamente.
+            <br> Un modelo mas realistico es el modelo de equilibrios secuenciales.
+            <br> Las transacciones de bienes de un periodo T ocurren en un periodo T.
+            <br> Los agentes necesitan activos financieros para transferir recursos de un periodo hasta otro.
+            <br> Tenemos mercado de bonos: 1 bono paga una unidad de consumo en el periodo $t+1$.
+            <br> Ahora el problema de optimizacion es: 
+            <br> $$Max\: (c_{1},c_{2},c_{3}) \: U(c_{1},c_{2}) \: s.a \: e_{1}+b_{0}=c_{1}+q_{1}b_{1}, \: e_{2}+b_{1}=c_{1}$$
+            <br> Con $b_{0} = 0, \: q_{1}=precio \: del \: bono. \: \frac{1}{1-q_{1}}-1=tasa \: de \: interes \: real.$
+            <br> Se plantea el Lagrangiano: $$L=U(c_{1},c_{2})+\lambda_{1} (e_{1}-c_{1}-b_{1}q_{1})+\lambda_{2} (e_{2}+b_{1}-c_{2})$$
+            <br> C.P.O: $$\frac{\partial L}{\partial c_{1}}=U_{1}(c_{1},c_{2})-\lambda_{1}=0$$
+            <br> $$\frac{\partial L}{\partial c_{2}}=U_{2}(c_{1},c_{2})-\lambda_{2}=0$$
+            <br> $$\frac{\partial L}{\partial b}=-q_{1}\lambda_{1}+\lambda_{2}=0$$
+            <br> $$\Rightarrow U_{1}(c_{1},c_{2})=\lambda_{1}=\frac{\lambda_{2}}{q_{1}}=\frac{U_{2}(c_{1},c_{2})}{Q_{1}}$$
+            <br> La oferta agregada en t es $s_{t}=N_{e_{t}}$
+            <br> La demanda agreagada en periodo t es $D_{t}=N_{c_{t}}(Q_{t},c_{1},c_{2})$ es la solucion del problema de optimizacion.
+            <br> El vaciamiento del mercado: $S_{t}=D_{t} \Rightarrow N_{e_{t}}=NC_{t}(Q,c_{1},c_{2}), \: e_{t}=C_{t}(q,c_{1},c_{2}) \: \forall t, \: b_{1}=0$
+        </p>
+        <h1>Modelo Neoclasico</h1>
+        <p>Base para estudiar crecimiento y ciclos.
+            <br> Vamos a estudiar:
             <ul>
-                <li>Completitud: $\forall x,y\in\mathbb{X}:x\succsim y \, \vee y\succsim x.$ El agente siempre tiene una opinión o una decisión. 
-                    <br> Esta defición no excluye la posibilidad de $y=x$, la completitud implica que $x\succsim x$, es decir que la relación es reflexiva.
+                <li>Control optimo</li>
+                <li>Programacion dinamica</li>
+            </ul>
+            Los hechos estilizados de Kaldor:
+            <ul>
+                <li>Kaldor (1957), observo propiedades estadisticas del proceso de crecimiento de EUA.</li>
+                <li>La participacion en el ingreso del capital y del trabajo es aproximadamente constante.</li>
+                <li>Las tasas de crecimiento del capital y producto por trabajador son constantes a largo plazo.</li>
+                <li>El ratio capital producto es constante (1,5% - 1,7%).
+                    <br> $\frac{\widehat{k_{t}}}{\widehat{y_{t}}}=\delta >0, \forall t$
                 </li>
-                <li>Transitividad: $\forall x,y,z\in\mathbb{X}:[x\succsim y\, \wedge y\succsim z]\Rightarrow x\succsim z.$ Las preferencias debiles del agente solo pueden girar en torno a las opciones que le son indiferentes.
-                    <br> es decir, representa cierta consistencia de las preferencias del agente. <br> Sin embargo, la transitividad no se cumple en todos los casos debidos a los <a href="https://en.wikipedia.org/wiki/Framing_effect_(psychology)">framing effects.</a> </li>
+                <li>La tasa de retorno real de la inversion es mas o menos constante (4% - 6%).</li>
             </ul>
-            <p>Dadas las preferencias, ¿como se va a comportar el agente?, Nosotros asumimos que dados un conjunto de decisiones $B \in \mathbb{X}$, el agente escogerá el elemento de B que mas prefiera. <br>
-            Definiendo la regla de decisión: <br> $$C(B;\succsim)={x\in B | x \succsim \forall y \in B}$$ <br> que sera el conjunto de elementos en B que el agente prefiera debilmente.</p>
-            <ul>
-                <li>$C(B;\succsim)$ puede contener mas de un elemento.</li>
-                <li>si B es finito, $C(B;\succsim)$ es no vacio.</li>
-                <li>si B es infinito, $C(B;\succsim)$ puede ser vacio. <br> $B=\left \{x|x\in [0,1)\right \}$. Si el agente siente que "mas es mejor" $x\succsim y$ si $x\geq y.$, entonces $C(B;\succsim)=\emptyset.$ </li>
-            </ul>
-            <h1>Proposiciones</h1>
-            <ul>
-                <li>
-                    1. Si B es finito y no vacio, entonces $ C(B,\succsim)  $ es no vacio. <br>
-                    2. Si $x,y\in \mathbb{A}\cap \mathbb{B}, x\in C(\mathbb{A},\succsim), y\in C(\mathbb{B},\succsim)\rightarrow x\in C(\mathbb{B},\succsim), y\in C(\mathbb{A},\succsim)$
-                    <br> Demostracion: Por inducción primera parte y transitividad segunda: 
-                <br> $B\rightarrow n = 1$, se cumple para n.
-                <br> para $n+1$ entonces; $B=\left \{x \right \} \rightarrow C(B;\succsim)$, por lo que para $C(B,\succsim)$ es no vacio. (Hipotesis inicial)
-                <br> Sea $A\rightarrow n+1$ elementos, $x \in A$. Hay un B con n elementos tal que: $B\cup \left \{ x \right \} = A, C(B,\succsim); B\subset X$.
-                <br> $C(\mathbb{B},\succsim)\neq 0$
-                <br> Sea $y\in C(\mathbb{B},\succsim)$
-                <br> $y\succsim x \Rightarrow \in C(\mathbb{A},\succsim) \neq 0$
-                <br> $x\succsim y \succsim z$
-                <br> $y\in C(\mathbb{B}, \succsim) \rightarrow y \succsim z$ por transitividad $x\succsim z$
-                <br> $x\in C(\mathbb{A},\succsim)\neq 0$.
-                </li> 
-            </ul>
-            <h1>Preferencias reveladas</h1>
-            <p>Sea $B$ el conjunto de todos los subconjuntos de $X$. 
-                <br> Una regla de decisión es una función $C:B\rightarrow B$ que satisface $\forall B \in B, C(B) \subseteq B$. 
-                <br> Una regla de decisión $C:B\rightarrow B$ satisface el axioma de preferencias reveladas (APHR) si:
-                <br> $$\forall x, y \in A \cap B, x \in C(A) \wedge y \in C(B)$$
-                $$\Rightarrow x \in C(B) \wedge y \in C(A)$$ 
-                "Si x e y estan en ambos conjuntos, y x esta en la regla de decisión en A e y en la regla de decisión de B, entonces x esta en la de B e y en la de A."
-            </p>
-            <h1>Funciones de utilidad</h1>
-            <p>Una relación de preferencias $\succsim$ sobre $\mathbb{x}$ esta representada por una función de utilidad $u: \mathbb{X} \rightarrow \mathbb{R}$ si:
-                $$x\succsim y \Leftrightarrow u(x) \geq u(y)$$
-            </p>
-            <p>Lema: Sea $\succsim$ una relación de preferencias que está representada por una función de utilidad. Entonces: 
-                <br> 1. $\succsim$ es racional.
-                <br> 2. $\forall B \subseteq X, C(B, \succsim) = argmax_{x\in B} u(x)$
-                <br> Demostración: 
-                <br> 1. Para demostrar que las preferencias $\succsim$ son racionales, solo necesitamos verificar que cumplan con las propiedades de completitud y transitividad.
-                <br> Completitud: Supongamos que tenemos dos elementos $x$ e $y$ en el conjunto $X$. Dado que $\succsim$ está representada por una función de utilidad, podemos comparar sus utilidades. Si $u(x) \geq u(y)$, entonces $x\succsim y$; si $u(y) \geq u(x)$, entonces $y\succsim x$. En cualquier caso, $\succsim$ cumple con la propiedad de completitud. 
-                <br> Transitividad: Supongamos que tenemos tres elementos $x$, $y$ e $z$ en el conjunto $X$. Si $x\succsim y$ y $y\succsim z$, entonces por la propiedad de transitividad de las relaciones de preferencia, también debe ser cierto que $x\succsim z$. Esto se cumple en $\succsim$.
-                <br> Por lo tanto, dado que las propiedades de completitud y transitividad se cumplen en la relación de preferencias $\succsim$, podemos afirmar que es racional. 
-                <br> 2. Definimos el conjunto $C(B, \succsim)$ como el conjunto de elecciones óptimas en el conjunto $B$ de acuerdo con $\succsim$. Por definición, $C(B, \succsim) = {x\in B \mid \forall y\in B, x\succsim y}$.
-                Dado que $\succsim$ está representada por la función de utilidad $u(x)$, podemos comparar las utilidades de los elementos en $B$. El conjunto $C(B, \succsim)$ incluirá todos los elementos $x$ en $B$ para los cuales $u(x) \geq u(y)$ para todo $y$ en $B$. En otras palabras, $C(B, \succsim) = {x\in B \mid u(x) \geq u(y) \text{ para todo } y\in B}$. Esto equivale a $\arg\max_{x\in B} u(x)$.
-            </p>
-            <h1>Proposiciones</h1>
-            <p>1. Sea $X$ finito y $\succsim$ racional. Entonces, existe $u:\mathbb{X}\rightarrow \mathbb{R}$ que representa a $\succsim$.</p>
-            <p>Sea $\mathbb{X} = \mathbb{R}^2$ y consideremos las preferencias lexicograficas:
-                <br> $$x\succsim y \Leftrightarrow (x_{1},y_{1}) \vee x_{1} = y_{1} \wedge x_{2} \geq y_{2}$$
-                <br> Proposicion: las preferencias lexicograficas son racionales, pero no tienen representacion por funcion de utilidad.
-            </p>
-            <h1>Continuidad</h1>
-            <ul>
-                <li>Definición: diremos que $\succsim$ es continua si para todo par de secuencias $x^n \rightarrow x$ e $y^n \rightarrow y$ en $X$ tales que $x^n \succsim y^n$, para todo $n$ se tiene que $x \succsim y$.</li>
-                <li>Lema: si $u$ es una funcion continua que representa a $\succsim$, entonces, $\succsim$ es continua.</li>
-                <li>Proposicion: Sea $X \subseteq \mathbb{R}^n$ y $\succsim$ racional y continua. Entonces, $\succsim$ puede ser representada por una funcion continua $u:X \rightarrow \mathbb{R}.$</li>
-            </ul>
+        </p>
         </main>
     </body>
 </html>

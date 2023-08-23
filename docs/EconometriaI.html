@@ -178,92 +178,9 @@
         </nav>
 
         <main>
-            <h1>Microeconomia I</h1>
+            <h1>Econometria I</h1>
             <hr>
-            <h1>Teoria de decisión</h1>
-            <p>El modelo de la teoria de las decisiones es un modelo basado en acercamientos a la optimizacion economica, que puede ser utilizado en diferentes ambitos de la vida cotidiana.</p>
-            <p>Un tomador de decisiones (TD) debe elegir su alternativa preferida de x de un conjunto X con consistencia</p>
-            <p>El problema quedaria modelado: $u:X\rightarrow\mathbb{R}$</p>
-            <h1>Preferencias y elección</h1>
-            <hr>
-            <p>Sea X el conjunto de posibles alternativas o decisiones. <br> Podemos tener $X \in \mathbb{R}^n$ si tenemos $n$ bienes diferentes.</p>
-            <ul>
-                <li>$x\in\mathbb{X}$ especifica la cantidad de cada bien. (commida, ropa, celulares, etc)</li>
-                <li>$x=\left (  x_{1},x_{2},...,x_{n}\right )$ en el caso de n bienes.</li>
-            </ul>
-            <p>Podemos definir las relaciones de preferencia sobre el conjunto $\mathbb{X}$ asi:  </p>
-            <ul>
-                <li>Preferencia debil: $x\succsim y\leftrightarrow x\, es\, al\, menos\, tan\, bueno\, como\, y$</li>
-                <li>Preferencia estricta: $x\succ y \Leftrightarrow x\succsim y \, \wedge y \succnsim x$ "x es al menos tan bueno como y, pero y no es tan bueno como x" </li>
-                <li>Indiferencia: $x\sim y\Leftrightarrow x\succsim y\,  \wedge y \succsim x$ "x es al menos tan bueno como y, e y es al menos tan bueno como x"</li>
-            </ul>
-            <p>Esta relación de preferencias es racional si cumple con dos definiciones:</p>
-            <ul>
-                <li>Completitud: $\forall x,y\in\mathbb{X}:x\succsim y \, \vee y\succsim x.$ El agente siempre tiene una opinión o una decisión. 
-                    <br> Esta defición no excluye la posibilidad de $y=x$, la completitud implica que $x\succsim x$, es decir que la relación es reflexiva.
-                </li>
-                <li>Transitividad: $\forall x,y,z\in\mathbb{X}:[x\succsim y\, \wedge y\succsim z]\Rightarrow x\succsim z.$ Las preferencias debiles del agente solo pueden girar en torno a las opciones que le son indiferentes.
-                    <br> es decir, representa cierta consistencia de las preferencias del agente. <br> Sin embargo, la transitividad no se cumple en todos los casos debidos a los <a href="https://en.wikipedia.org/wiki/Framing_effect_(psychology)">framing effects.</a> </li>
-            </ul>
-            <p>Dadas las preferencias, ¿como se va a comportar el agente?, Nosotros asumimos que dados un conjunto de decisiones $B \in \mathbb{X}$, el agente escogerá el elemento de B que mas prefiera. <br>
-            Definiendo la regla de decisión: <br> $$C(B;\succsim)={x\in B | x \succsim \forall y \in B}$$ <br> que sera el conjunto de elementos en B que el agente prefiera debilmente.</p>
-            <ul>
-                <li>$C(B;\succsim)$ puede contener mas de un elemento.</li>
-                <li>si B es finito, $C(B;\succsim)$ es no vacio.</li>
-                <li>si B es infinito, $C(B;\succsim)$ puede ser vacio. <br> $B=\left \{x|x\in [0,1)\right \}$. Si el agente siente que "mas es mejor" $x\succsim y$ si $x\geq y.$, entonces $C(B;\succsim)=\emptyset.$ </li>
-            </ul>
-            <h1>Proposiciones</h1>
-            <ul>
-                <li>
-                    1. Si B es finito y no vacio, entonces $ C(B,\succsim)  $ es no vacio. <br>
-                    2. Si $x,y\in \mathbb{A}\cap \mathbb{B}, x\in C(\mathbb{A},\succsim), y\in C(\mathbb{B},\succsim)\rightarrow x\in C(\mathbb{B},\succsim), y\in C(\mathbb{A},\succsim)$
-                    <br> Demostracion: Por inducción primera parte y transitividad segunda: 
-                <br> $B\rightarrow n = 1$, se cumple para n.
-                <br> para $n+1$ entonces; $B=\left \{x \right \} \rightarrow C(B;\succsim)$, por lo que para $C(B,\succsim)$ es no vacio. (Hipotesis inicial)
-                <br> Sea $A\rightarrow n+1$ elementos, $x \in A$. Hay un B con n elementos tal que: $B\cup \left \{ x \right \} = A, C(B,\succsim); B\subset X$.
-                <br> $C(\mathbb{B},\succsim)\neq 0$
-                <br> Sea $y\in C(\mathbb{B},\succsim)$
-                <br> $y\succsim x \Rightarrow \in C(\mathbb{A},\succsim) \neq 0$
-                <br> $x\succsim y \succsim z$
-                <br> $y\in C(\mathbb{B}, \succsim) \rightarrow y \succsim z$ por transitividad $x\succsim z$
-                <br> $x\in C(\mathbb{A},\succsim)\neq 0$.
-                </li> 
-            </ul>
-            <h1>Preferencias reveladas</h1>
-            <p>Sea $B$ el conjunto de todos los subconjuntos de $X$. 
-                <br> Una regla de decisión es una función $C:B\rightarrow B$ que satisface $\forall B \in B, C(B) \subseteq B$. 
-                <br> Una regla de decisión $C:B\rightarrow B$ satisface el axioma de preferencias reveladas (APHR) si:
-                <br> $$\forall x, y \in A \cap B, x \in C(A) \wedge y \in C(B)$$
-                $$\Rightarrow x \in C(B) \wedge y \in C(A)$$ 
-                "Si x e y estan en ambos conjuntos, y x esta en la regla de decisión en A e y en la regla de decisión de B, entonces x esta en la de B e y en la de A."
-            </p>
-            <h1>Funciones de utilidad</h1>
-            <p>Una relación de preferencias $\succsim$ sobre $\mathbb{x}$ esta representada por una función de utilidad $u: \mathbb{X} \rightarrow \mathbb{R}$ si:
-                $$x\succsim y \Leftrightarrow u(x) \geq u(y)$$
-            </p>
-            <p>Lema: Sea $\succsim$ una relación de preferencias que está representada por una función de utilidad. Entonces: 
-                <br> 1. $\succsim$ es racional.
-                <br> 2. $\forall B \subseteq X, C(B, \succsim) = argmax_{x\in B} u(x)$
-                <br> Demostración: 
-                <br> 1. Para demostrar que las preferencias $\succsim$ son racionales, solo necesitamos verificar que cumplan con las propiedades de completitud y transitividad.
-                <br> Completitud: Supongamos que tenemos dos elementos $x$ e $y$ en el conjunto $X$. Dado que $\succsim$ está representada por una función de utilidad, podemos comparar sus utilidades. Si $u(x) \geq u(y)$, entonces $x\succsim y$; si $u(y) \geq u(x)$, entonces $y\succsim x$. En cualquier caso, $\succsim$ cumple con la propiedad de completitud. 
-                <br> Transitividad: Supongamos que tenemos tres elementos $x$, $y$ e $z$ en el conjunto $X$. Si $x\succsim y$ y $y\succsim z$, entonces por la propiedad de transitividad de las relaciones de preferencia, también debe ser cierto que $x\succsim z$. Esto se cumple en $\succsim$.
-                <br> Por lo tanto, dado que las propiedades de completitud y transitividad se cumplen en la relación de preferencias $\succsim$, podemos afirmar que es racional. 
-                <br> 2. Definimos el conjunto $C(B, \succsim)$ como el conjunto de elecciones óptimas en el conjunto $B$ de acuerdo con $\succsim$. Por definición, $C(B, \succsim) = {x\in B \mid \forall y\in B, x\succsim y}$.
-                Dado que $\succsim$ está representada por la función de utilidad $u(x)$, podemos comparar las utilidades de los elementos en $B$. El conjunto $C(B, \succsim)$ incluirá todos los elementos $x$ en $B$ para los cuales $u(x) \geq u(y)$ para todo $y$ en $B$. En otras palabras, $C(B, \succsim) = {x\in B \mid u(x) \geq u(y) \text{ para todo } y\in B}$. Esto equivale a $\arg\max_{x\in B} u(x)$.
-            </p>
-            <h1>Proposiciones</h1>
-            <p>1. Sea $X$ finito y $\succsim$ racional. Entonces, existe $u:\mathbb{X}\rightarrow \mathbb{R}$ que representa a $\succsim$.</p>
-            <p>Sea $\mathbb{X} = \mathbb{R}^2$ y consideremos las preferencias lexicograficas:
-                <br> $$x\succsim y \Leftrightarrow (x_{1},y_{1}) \vee x_{1} = y_{1} \wedge x_{2} \geq y_{2}$$
-                <br> Proposicion: las preferencias lexicograficas son racionales, pero no tienen representacion por funcion de utilidad.
-            </p>
-            <h1>Continuidad</h1>
-            <ul>
-                <li>Definición: diremos que $\succsim$ es continua si para todo par de secuencias $x^n \rightarrow x$ e $y^n \rightarrow y$ en $X$ tales que $x^n \succsim y^n$, para todo $n$ se tiene que $x \succsim y$.</li>
-                <li>Lema: si $u$ es una funcion continua que representa a $\succsim$, entonces, $\succsim$ es continua.</li>
-                <li>Proposicion: Sea $X \subseteq \mathbb{R}^n$ y $\succsim$ racional y continua. Entonces, $\succsim$ puede ser representada por una funcion continua $u:X \rightarrow \mathbb{R}.$</li>
-            </ul>
+            
         </main>
     </body>
 </html>
