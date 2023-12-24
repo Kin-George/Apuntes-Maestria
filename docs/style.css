@@ -389,6 +389,16 @@ main {
   transform: rotate(-180deg);
 }
 
+.pdfview {
+  margin: auto;
+  display: block;
+  width: 80%;
+  height: 80vh;
+  border-radius:20px;
+  padding-bottom: 10px;
+
+}
+
 /* Small screens */
 @media only screen and (max-width: 600px) {
   .navbar {
